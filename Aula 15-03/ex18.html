@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio 18</title>
+    <script>
+        var sexo = parseInt(prompt("Informe seu SEXO, 1[Masculino] - 2[Feminino]"));
+        var h = parseFloat(prompt("Informe seu altura: "));
+
+        if(sexo == 1){
+            var peso = parseFloat (72.7 * h) - 58;
+        }else{
+            var peso = parseFloat (62.1 * h) - 44.7;
+        }
+        alert("O seu peso ideal de acordo com sua altura é de: " + peso.toFixed(3) + "KG's");
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

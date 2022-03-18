@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio 04</title>
+
+    <script>
+        alert("Informe 3 (três) numeros e somaremos os 2 maiores")
+        var n1 =parseFloat(prompt("Informe um valor"));
+        var n2 =parseFloat(prompt("Informe outro valor"));
+        var n3 =parseFloat(prompt("Informe outro valor"));
+
+        if(n1 > n2 && n1 > n3){
+            if(n2 > n3){
+                var soma = parseFloat (n1 + n2);
+            }else{
+                var soma = parseFloat (n1 + n3);
+            }
+        }else if(n2 > n1 && n2 > n3){
+            if(n1 > n3){
+                var soma = parseFloat (n2 + n1);
+            }else{
+                var soma = parseFloat (n2 + n3)
+            }
+        }else if(n3 > n1 && n3 > n2){
+            if(n1 > n2){
+                var soma = parseFloat(n3 + n1);
+            }else{
+                var soma = parseFloat(n3 + n2);
+            }
+        }else{
+            alert("Erro")
+        } 
+        alert(soma);
+    </script>
+
+</head>
+<body>
+    
+</body>
+</html>

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio 23</title>
+    <script>
+        var maior = 0; 
+        var menor = 0;
+        var veriMaior = 0;
+        var veriMenor = 0;
+
+        for (var i = 0; i < 20; i++) {
+            var num = parseFloat(prompt("Digite um numero: "));
+            
+            var contadorMaior = num;
+            
+            if (contadorMaior > veriMaior) {
+                veriMaior = num;
+                maior = veriMaior;
+            } else {
+                if (veriMaior == 0) {
+                    veriMaior = num;
+                }
+
+            }
+
+            var contadorMenor = num;
+
+            if (contadorMenor < veriMenor) {
+                veriMenor = num;
+                menor = veriMenor;
+            } else {
+                if (veriMenor == 0) {
+                    veriMenor = num;
+                    menor = veriMenor;
+                }
+            }
+        } 
+        
+        alert("Menor número informado foi " + menor + ", e o maior foi " + maior);
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
